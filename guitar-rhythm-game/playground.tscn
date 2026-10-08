@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c7tc1hblgbqh1"]
+
+[ext_resource type="PackedScene" uid="uid://xir6kcktxq4w" path="res://Player/player.tscn" id="1_rupst"]
+[ext_resource type="Texture2D" uid="uid://cx1gf6t8sd6r" path="res://Player/Sprites/Background.png" id="2_wt17y"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ygdfc"]
+
+[node name="Playground" type="Node2D" unique_id=1053893157]
+
+[node name="Player" parent="." unique_id=718157518 instance=ExtResource("1_rupst")]
+top_level = true
+position = Vector2(234, 125)
+
+[node name="Background" type="Sprite2D" parent="." unique_id=273625846]
+position = Vector2(240.00002, 135.49998)
+scale = Vector2(0.24895833, 0.25092587)
+texture = ExtResource("2_wt17y")
+
+[node name="Sounds" type="AudioStreamPlayer" parent="." unique_id=1279311603]
+
+[node name="Guitar" type="AnimatedSprite2D" parent="." unique_id=206905662]
+sprite_frames = SubResource("SpriteFrames_ygdfc")
